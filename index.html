@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <title>Verses Biblia</title>
+
+    <style>
+        .tam-300 {
+            width: 300px;
+            height: 150px;
+
+            box-shadow: 0px 0px 10px gray;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container mx-auto ">
+        <div class="w-auto">
+            <div class="flex flex-col my-2 ">
+                <label for="nomeLivro" class="flex justify-center font-mono text-2xl">Digite o nome do livro abreviado
+                    "mateus" mt</label>
+                <input id="nomeLivro" class="border focus py-2 px-4" type="text" placeholder="digite aqui">
+            </div>
+            <div class="flex flex-col my-2 ">
+                <label for="cap" class="flex justify-center font-mono text-2xl">Coloque o numero do capítulo</label>
+                <input id="cap" class="border focus py-2 px-4" type="number"
+                    placeholder="caso não coloque o capítulo o livro começara do cap 1">
+            </div>
+            <div class="flex flex-col my-2 ">
+                <label for="ver" class="flex justify-center font-mono text-2xl">busque pelo verso</label>
+                <input id="ver" class="border focus py-2 px-4" type="number"
+                    placeholder="caso não coloque o capítulo o livro começara do cap 1">
+            </div>
+            <div class="flex justify-center mb-4">
+                <button id="btnLivro"
+                    class=" bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">enviar</button>
+            </div>
+        </div>
+
+        <div id="dadosLivro" class="tam-300 mx-auto">
+
+        </div>
+
+        <div>
+            <div class="flex justify-center my-5">
+                <div class="inline-flex ">
+                    <button id="btnATN"
+                        class="mx-1 bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-l">
+                        Verso anterior
+                    </button>
+                    <button id="btnAVN"
+                        class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-r">
+                        Próximo verso
+                    </button>
+                </div>
+            </div>
+
+            <div id="resBTN">
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="./assets/index.js"></script>
+</body>
+
+</html>
